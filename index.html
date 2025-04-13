@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TawasulTech - Smart City Reporting</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f6f8;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #2b4a6f;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    main {
+      padding: 20px;
+    }
+    .report-form {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      max-width: 600px;
+      margin: auto;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    button {
+      background: #2b4a6f;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      margin-top: 15px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    footer {
+      text-align: center;
+      padding: 10px;
+      background: #ddd;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>TawasulTech</h1>
+    <p>Smart City Communication Platform</p>
+  </header>
+
+  <main>
+    <section class="report-form">
+      <h2>Report an Issue</h2>
+      <form>
+        <label for="issue-type">Issue Type</label>
+        <select id="issue-type" name="issue-type">
+          <option value="pothole">Pothole</option>
+          <option value="streetlight">Broken Streetlight</option>
+          <option value="waste">Garbage Issue</option>
+          <option value="traffic">Traffic Problem</option>
+          <option value="other">Other</option>
+        </select>
+
+        <label for="location">Location</label>
+        <input type="text" id="location" name="location" placeholder="Enter area or street name" />
+
+        <label for="description">Description</label>
+        <textarea id="description" name="description" rows="4" placeholder="Describe the issue..."></textarea>
+
+        <label for="image">Upload Photo</label>
+        <input type="file" id="image" name="image" accept="image/*" />
+
+        <button type="submit">Submit Report</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 TawasulTech. Empowering Smart Cities.</p>
+  </footer>
+</body>
+</html>
